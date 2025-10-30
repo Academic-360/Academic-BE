@@ -24,6 +24,11 @@ app.get("/", (req, res) => {
   res.json({ status: "success", message: "Backend is running" });
 });
 
+// Local health route for parity with Vercel function
+app.get("/api/health", (req, res) => {
+  res.json({ status: "success", message: "Backend is running (local)" });
+});
+
 // Routes (mount for both local and Vercel serverless pathing)
 app.use("/api/auth", authRoutes);
 app.use("/auth", authRoutes);

@@ -1,4 +1,6 @@
-import app from "../app.js";
+import app from "../server.js";
 
-// Export the Express app directly; Vercel will handle it as a serverless function
-export default app;
+app.listen(3000, () => console.log("Server ready on port 3000."));
+
+module.exports = app;
+
