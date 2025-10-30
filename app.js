@@ -19,6 +19,11 @@ app.use(cors({ origin: corsOrigin, credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
+// Health/root route
+app.get("/", (req, res) => {
+  res.json({ status: "success", message: "Backend is running" });
+});
+
 // Routes (mount for both local and Vercel serverless pathing)
 app.use("/api/auth", authRoutes);
 app.use("/auth", authRoutes);

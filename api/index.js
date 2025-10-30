@@ -1,5 +1,4 @@
-import serverless from "serverless-http";
 import app from "../app.js";
 
-// Export a serverless handler for Vercel
-export default serverless(app);
+// Export the Express app directly; Vercel will handle it as a serverless function
+export default app;
