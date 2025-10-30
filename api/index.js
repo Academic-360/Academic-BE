@@ -1,4 +1,4 @@
-import app from "../server.js";
+import app from "../src/server.js";
 
 app.listen(3000, () => console.log("Server ready on port 3000."));
 
