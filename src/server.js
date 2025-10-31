@@ -11,8 +11,6 @@ dotenv.config();
 const app = express();
 
 
-connectDB();
-
 // Middleware
 const corsOrigin = process.env.FRONTEND_ORIGIN || true; // reflect origin in dev, restrict in prod via env
 app.use(cors({ origin: corsOrigin, credentials: true }));
