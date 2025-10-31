@@ -19,12 +19,12 @@ app.use(cookieParser());
 
 // Health/root route
 app.get("/api", (req, res) => {
-  res.json({ status: "success", message: "Backend is running" });
+  res.json({ status: "success", message: "Backend is running1" });
 });
 
 // Local health route for parity with Vercel function
 app.get("/api/health", (req, res) => {
-  res.json({ status: "success", message: "Backend is running (local)" });
+  res.json({ status: "success", message: "Backend is running (local)1" });
 });
 
 // Routes (mount for both local and Vercel serverless pathing)
