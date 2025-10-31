@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "dev": "nodemon api/index.js",
+    "dev": "nodemon api/index.js",
     "start": "node src/server.js"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Academic-360/Academic-BE.git"
@@ -26,6 +26,7 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.2",
-    "morgan": "^1.10.1"
+    "morgan": "^1.10.1",
+    "serverless-http": "^4.0.0"
   }
 }
