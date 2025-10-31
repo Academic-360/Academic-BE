@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Health/root route
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.json({ status: "success", message: "Backend is running" });
 });
 
